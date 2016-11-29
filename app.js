@@ -37,6 +37,7 @@ app.post('/generate', function (req, res) {
         var rnum = Math.floor(Math.random() * chars.length);
         fs.appendFile('files/' + name, chars.substring(rnum, rnum + 1));
     }
+    res.send(size+' bytes File generated');
 
 
 });

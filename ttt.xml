@@ -1,0 +1,12 @@
+
+    <scriptTask id="ScriptTask" scriptFormat="groovy">
+        <script>
+            def newlogin = login.repalceAll('FST','Wassim')
+            def newpassword = password.replaceAll('FST','1111')
+            def newemail = email.replaceAll('FST@fst.rnu.tn','dimassi.wassim@gmail.com')
+            execution.setVariable('login',newlogin)
+            execution.setVariable('password',newpassword)
+            execution.setVariable('email',newemail)
+
+        </script>
+    </scriptTask>
